@@ -1,0 +1,128 @@
+branch_code,branch_name,city_approx,avg_sales_index,pred_spatial_group,median_baseline_spatial_group,pred_standard_fold,median_baseline_standard_fold,spatial_group
+W035,Мега,Tashkent,86.51,28.76,19.195,22.112,17.84,tashkent_northwest
+W025,Зенит,Tashkent,59.17,24.893,19.195,24.89,17.96,tashkent_northwest
+W016,МедГор,Tashkent,58.02,23.243,19.195,20.151,17.96,tashkent_northwest
+W026,Крестик,Tashkent,48.21,32.198,16.84,32.773,17.195,tashkent_northeast
+W037,Паркентская,Tashkent,46.45,23.29,16.84,24.066,17.84,tashkent_northeast
+W047,Чирчик,Chirchiq,43.36,26.409,15.69,24.464,17.195,outside_tashkent
+W072,Бухара,Bukhara,41.24,33.39,15.69,32.585,18.02,outside_tashkent
+W083,Водник,Tashkent,41.0,20.377,17.0,20.214,17.195,tashkent_south
+W099,Сайрам,Tashkent,38.1,21.511,16.84,21.569,17.195,tashkent_northeast
+W101,ТТЗ,Tashkent,37.61,29.466,16.84,33.013,16.84,tashkent_northeast
+W012,Ганга,Tashkent,37.11,21.128,19.195,19.589,17.84,tashkent_northwest
+W183,Грандмир,Tashkent,36.41,23.864,17.0,21.125,17.84,tashkent_south
+W185,Бульвар,Tashkent,36.11,20.88,19.195,18.6,16.84,tashkent_northwest
+W087,СамПИ,Tashkent,35.13,22.791,16.84,22.276,17.195,tashkent_northeast
+W018,Садык Азимов,Tashkent,34.96,31.959,17.0,29.383,17.96,tashkent_south
+W057,Карши,Karshi,34.92,19.526,15.69,21.104,16.84,outside_tashkent
+W054,Алмалык,Almalyk,34.62,20.404,15.69,20.825,17.195,outside_tashkent
+W071,АНД Навруз,Andijan,34.54,24.787,15.69,20.327,17.195,outside_tashkent
+W092,Янги Хаёт,Tashkent,34.47,24.713,18.3,20.465,17.84,tashkent_southwest
+W017,Ракат,Tashkent,32.62,33.756,17.0,17.392,17.84,tashkent_south
+W015,Кадышева,Tashkent,31.86,36.376,17.0,36.631,17.96,tashkent_south
+W128,НАМ А.Навои,Namangan,31.58,24.378,15.69,24.651,17.96,outside_tashkent
+W074,Фергана,Fergana,29.86,29.037,15.69,25.108,16.84,outside_tashkent
+W031,Янги Куйлюк 5,Tashkent,29.5,19.86,17.0,23.221,17.96,tashkent_south
+W022,Авайхон,Tashkent,29.03,15.362,16.84,13.321,16.84,tashkent_northeast
+W180,УзБум,Tashkent,28.67,28.896,17.0,26.143,16.84,tashkent_south
+W030,Цум,Tashkent,27.74,20.328,17.0,19.662,17.84,tashkent_south
+W163,АНД Узбегим,Andijan,27.16,22.971,15.69,23.748,16.84,outside_tashkent
+W189,Навои,Navoi,27.05,26.124,15.69,25.958,16.84,outside_tashkent
+W159,Туйтепа,near Yangiyul (27 km),26.59,20.134,15.69,23.844,17.96,outside_tashkent
+W070,Янгиюль,Yangiyul,26.5,29.595,15.69,31.983,16.84,outside_tashkent
+W027,Луначарский,Tashkent,26.15,17.486,16.84,18.671,16.84,tashkent_northeast
+W139,Гулобод,Tashkent,25.81,20.944,19.195,17.807,18.02,tashkent_northwest
+W196,Кибрай,Kibray,25.77,20.998,16.84,20.344,16.84,tashkent_northeast
+W182,Дружба,Tashkent,25.41,19.527,19.195,22.702,17.195,tashkent_northwest
+W130,Хувайдо,Tashkent,24.07,17.989,19.195,16.41,17.195,tashkent_northwest
+W079,Пионерская,Tashkent,23.46,14.548,18.3,14.685,17.84,tashkent_southwest
+W098,Корасув,Tashkent,23.1,24.627,16.84,23.934,17.96,tashkent_northeast
+W175,Ангрен,Angren,22.68,25.221,15.69,23.44,17.195,outside_tashkent
+W064,Тансыкбаев,Tashkent,22.49,21.463,19.195,20.964,17.195,tashkent_northwest
+W190,Рисовый,Tashkent,22.41,27.152,17.0,22.511,17.84,tashkent_south
+W036,Минор,Tashkent,22.32,24.162,19.195,26.49,18.02,tashkent_northwest
+W097,Компас,Tashkent,22.14,22.435,17.0,26.407,16.84,tashkent_south
+W214,Матонат,Tashkent,21.59,18.196,17.0,20.761,17.195,tashkent_south
+W039,Шохимардон,Tashkent,21.26,19.679,17.0,20.264,17.84,tashkent_south
+W152,Боткина,Tashkent,21.12,28.0,17.0,25.341,17.84,tashkent_south
+W073,НАМ Галаба,Namangan,20.74,22.054,15.69,27.72,18.02,outside_tashkent
+W068,Файзабад,Tashkent,20.47,24.239,17.0,23.802,16.84,tashkent_south
+W046,Чиланзар,Tashkent,20.35,19.595,18.3,20.589,18.02,tashkent_southwest
+W028,Тинчлик,Tashkent,20.23,18.282,19.195,12.782,17.195,tashkent_northwest
+W013,Гвардейская,Tashkent,20.11,16.888,16.84,19.88,18.02,tashkent_northeast
+W138,Коканд,Kokand,19.75,19.551,15.69,22.947,17.96,outside_tashkent
+W023,Ахмад,Tashkent,19.31,16.387,18.3,16.686,17.96,tashkent_southwest
+W154,Газалкент,Gazalkent,19.29,16.664,15.69,14.505,17.195,outside_tashkent
+W080,Спутник,Tashkent,19.1,23.86,18.3,25.748,18.02,tashkent_southwest
+W100,Саракулька,Tashkent,18.91,14.672,17.0,15.187,17.84,tashkent_south
+W187,Термез,Termez,18.88,21.996,15.69,23.728,16.84,outside_tashkent
+W181,Эшангузар,Tashkent,18.45,22.212,18.3,22.164,18.02,tashkent_southwest
+W161,Чирчик Юсупов,Chirchiq,18.36,19.389,15.69,22.827,18.02,outside_tashkent
+W222,Сити Молл Фудкорт,Tashkent,18.24,14.216,19.195,10.616,18.02,tashkent_northwest
+W126,Максим Горький,Tashkent,18.11,18.063,16.84,19.743,17.96,tashkent_northeast
+W162,Янгибазар,near Kibray (10 km),17.99,26.496,16.84,30.34,18.02,tashkent_northeast
+W044,Мевазор,Tashkent,17.93,20.669,19.195,16.711,17.84,tashkent_northwest
+W049,Сити Молл 1,Tashkent,17.84,14.154,19.195,10.56,18.02,tashkent_northwest
+W034,Кукча,Tashkent,17.38,19.538,19.195,21.641,16.84,tashkent_northwest
+W205,IT парк,Tashkent,17.01,14.346,16.84,10.864,16.84,tashkent_northeast
+W051,Ардус,Tashkent,17.0,16.955,19.195,18.023,16.84,tashkent_northwest
+W084,Глобус,Tashkent,16.84,13.257,18.3,14.986,17.195,tashkent_southwest
+W003,Фозилтепа,Tashkent,15.83,15.078,18.3,13.403,16.84,tashkent_southwest
+W173,Бочка,near Gazalkent (16 km),15.65,18.732,15.69,20.393,16.84,outside_tashkent
+W094,Ватан,Tashkent,15.55,15.7,18.3,16.225,17.195,tashkent_southwest
+W032,Аккурган,Tashkent,15.28,17.442,16.84,19.672,17.96,tashkent_northeast
+W151,Бекабад,Bekabad,15.11,20.145,15.69,18.114,17.195,outside_tashkent
+W081,Чорсу,Tashkent,15.1,17.562,19.195,15.361,16.84,tashkent_northwest
+W014,Зиёлилар,Tashkent,14.89,15.367,16.84,15.72,17.96,tashkent_northeast
+W137,Вега,Tashkent,14.72,22.289,18.3,22.499,18.02,tashkent_southwest
+W056,Карасарай,Tashkent,14.59,15.802,19.195,13.089,16.84,tashkent_northwest
+W011,Алгоритм,Tashkent,14.57,17.782,18.3,18.226,17.84,tashkent_southwest
+W093,Бунёдкор,Tashkent,14.53,17.217,18.3,17.155,17.84,tashkent_southwest
+W059,Кушбеги,Tashkent,14.5,15.202,17.0,13.81,18.02,tashkent_south
+W091,Эко (Chimgan),Tashkent,14.14,22.742,16.84,24.668,17.84,tashkent_northeast
+W075,Атлас,Tashkent,14.13,20.212,18.3,18.308,17.84,tashkent_southwest
+W067,Уч Кахрамон,Tashkent,13.86,26.307,19.195,33.497,17.96,tashkent_northwest
+W040,Шохсарой,Tashkent,13.87,24.698,19.195,32.461,16.84,tashkent_northwest
+W140,Аэропорт Duty Free,Tashkent,13.84,13.123,17.0,13.575,17.195,tashkent_south
+W077,Камолон,Tashkent,13.79,20.567,19.195,22.351,18.02,tashkent_northwest
+W048,Шахристан,Tashkent,13.49,17.692,19.195,12.873,17.96,tashkent_northwest
+W125,Ашрафи,Tashkent,13.37,20.053,17.0,21.166,17.96,tashkent_south
+W096,Изза,Tashkent,13.14,20.225,18.3,20.988,18.02,tashkent_southwest
+W198,Бобур-МКАД,Tashkent,13.08,13.149,17.0,13.491,17.195,tashkent_south
+W029,Урикзор,Tashkent,12.98,18.887,18.3,18.07,18.02,tashkent_southwest
+W060,Малика,Tashkent,12.88,16.845,19.195,13.748,16.84,tashkent_northwest
+W150,Авторынок (Sergeli),Tashkent,12.87,23.552,18.3,24.901,17.96,tashkent_southwest
+W155,Кургантепа,Tashkent,12.74,20.53,18.3,17.753,16.84,tashkent_southwest
+W062,Нурафшон,Tashkent,12.53,16.86,19.195,14.309,17.84,tashkent_northwest
+W177,Зангиата,Tashkent,11.8,19.612,18.3,16.008,17.84,tashkent_southwest
+W208,Бодомзор,Tashkent,11.68,15.897,19.195,12.749,17.84,tashkent_northwest
+W041,Аль-Хорезми,Tashkent,11.66,13.065,18.3,13.844,17.195,tashkent_southwest
+W167,Гейдар Алиев,Tashkent,11.52,14.354,17.0,13.667,17.84,tashkent_south
+W076,Жомий,Tashkent,11.47,20.551,19.195,17.499,17.96,tashkent_northwest
+W147,Эркин,Tashkent,11.39,21.998,18.3,20.754,18.02,tashkent_southwest
+W141,Лабзак,Tashkent,11.38,16.188,19.195,13.386,18.02,tashkent_northwest
+W043,Жарарык,Tashkent,11.0,17.859,19.195,17.117,17.96,tashkent_northwest
+W033,Коммунизм,Tashkent,10.9,15.975,19.195,12.176,17.96,tashkent_northwest
+W201,Нукус-1,Nukus,10.86,36.905,15.69,31.87,17.84,outside_tashkent
+W089,Шота Руставели,Tashkent,10.77,14.856,17.0,15.518,16.84,tashkent_south
+W188,Некст,Tashkent,10.31,24.485,17.0,23.414,17.96,tashkent_south
+W215,Ало,Tashkent,10.24,15.047,19.195,12.405,17.195,tashkent_northwest
+W078,Келес,Keles,10.17,23.353,19.195,26.481,18.02,tashkent_northwest
+W038,Ташми,Tashkent,9.96,20.375,19.195,20.181,18.02,tashkent_northwest
+W127,Мехржон,Tashkent,9.69,33.215,17.0,31.256,16.84,tashkent_south
+W019,Хаст-Имам,Tashkent,9.45,16.869,19.195,14.39,17.84,tashkent_northwest
+W002,Лакокраска,Tashkent,9.27,18.457,16.84,18.721,17.195,tashkent_northeast
+W158,Северный Вокзал,Tashkent,8.99,20.917,17.0,20.888,17.96,tashkent_south
+W157,Себзар,Tashkent,8.92,19.937,19.195,16.221,17.84,tashkent_northwest
+W170,Уй бозор,Tashkent,8.64,19.397,19.195,17.461,17.96,tashkent_northwest
+W220,АНД Мумтоз,Andijan,8.46,28.446,15.69,30.945,18.02,outside_tashkent
+W145,Телебашня,Tashkent,8.33,17.283,19.195,14.216,18.02,tashkent_northwest
+W061,Нукус,Tashkent,8.29,20.575,19.195,21.619,17.195,tashkent_northwest
+W103,Чигатой,Tashkent,7.02,19.541,19.195,17.115,18.02,tashkent_northwest
+W122,Сергели,Tashkent,4.96,17.712,18.3,18.252,17.84,tashkent_southwest
+W124,Сити Молл экс,Tashkent,4.71,14.099,19.195,16.888,17.195,tashkent_northwest
+W174,БУХ Вокзал,Bukhara,4.22,18.799,15.69,22.663,17.96,outside_tashkent
+W219,М.Горький,Tashkent,3.79,14.396,16.84,15.772,18.02,tashkent_northeast
+W210,Алпомиш,Tashkent,3.64,17.164,19.195,16.607,17.195,tashkent_northwest
+W172,Заркайнар,Tashkent,1.72,18.348,19.195,19.5,17.84,tashkent_northwest
+W211,АНД Экопарк,Andijan,1.61,19.533,15.69,18.504,17.96,outside_tashkent

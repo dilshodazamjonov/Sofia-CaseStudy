@@ -1,0 +1,4 @@
+# keep the UI offline: no usage statistics, and no public-IP lookup when the server starts
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"

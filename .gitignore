@@ -1,0 +1,13 @@
+# environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+catboost_info/
+.DS_Store
+
+# large raw OpenStreetMap files, only needed to rebuild the feature tables from raw data (see README).
+# Keep the local copies: a fresh download is a different snapshot and will not reproduce the tables.
+data/external/osm/uzbekistan-latest.osm.pbf
+data/external/osm/processed/osm_roads.gpkg

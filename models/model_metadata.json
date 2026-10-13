@@ -1,0 +1,195 @@
+{
+  "model_file": "models/final_model.joblib",
+  "created_utc": "2026-10-13T10:44:46+00:00",
+  "model_type": "sklearn Pipeline: ColumnTransformer(log1p on the listed columns, others passed through) -> ExtraTreesRegressor",
+  "model_params": {
+    "n_estimators": 500,
+    "min_samples_leaf": 3,
+    "max_features": 0.5,
+    "random_state": 0
+  },
+  "target": {
+    "name": "avg_sales_index",
+    "definition": "mean of the daily sales index over 2026-09-01..2026-09-10 (10 days). Daily index = branch sales after discounts / highest single-day sales of any included branch x 100 (iiko).",
+    "training_range": [
+      1.61,
+      86.51
+    ],
+    "training_median": 17.84,
+    "interpretation": "early-September 2026 performance of an established branch; predictions are not clipped to 1-100"
+  },
+  "n_training_branches": 127,
+  "features": [
+    "bakeries_1km",
+    "cafes_1km",
+    "restaurants_1km",
+    "supermarkets_1km",
+    "shopping_pois_1km",
+    "schools_1km",
+    "healthcare_1km",
+    "public_transport_stops_1km",
+    "total_pois_1km",
+    "public_safia_nearest_km",
+    "public_safia_2nd_nearest_km",
+    "public_safia_3rd_nearest_km",
+    "public_safia_count_500m",
+    "public_safia_count_1km",
+    "public_safia_count_2km",
+    "public_safia_count_3km",
+    "population_density_latest",
+    "total_population_latest",
+    "population_growth_yoy",
+    "urban_share_latest",
+    "working_age_share_region_latest",
+    "age_20_29_share_latest"
+  ],
+  "feature_families": {
+    "pois": [
+      "bakeries_1km",
+      "cafes_1km",
+      "restaurants_1km",
+      "supermarkets_1km",
+      "shopping_pois_1km",
+      "schools_1km",
+      "healthcare_1km",
+      "public_transport_stops_1km",
+      "total_pois_1km"
+    ],
+    "network_public": [
+      "public_safia_nearest_km",
+      "public_safia_2nd_nearest_km",
+      "public_safia_3rd_nearest_km",
+      "public_safia_count_500m",
+      "public_safia_count_1km",
+      "public_safia_count_2km",
+      "public_safia_count_3km"
+    ],
+    "demographics": [
+      "population_density_latest",
+      "total_population_latest",
+      "population_growth_yoy",
+      "urban_share_latest",
+      "working_age_share_region_latest",
+      "age_20_29_share_latest"
+    ]
+  },
+  "preprocessing": {
+    "log1p": [
+      "bakeries_1km",
+      "cafes_1km",
+      "restaurants_1km",
+      "supermarkets_1km",
+      "shopping_pois_1km",
+      "schools_1km",
+      "healthcare_1km",
+      "public_transport_stops_1km",
+      "total_pois_1km",
+      "public_safia_nearest_km",
+      "public_safia_2nd_nearest_km",
+      "public_safia_3rd_nearest_km",
+      "public_safia_count_500m",
+      "public_safia_count_1km",
+      "public_safia_count_2km",
+      "public_safia_count_3km"
+    ],
+    "scaling": "none (tree model)",
+    "missing_values": "none in training; every feature must be present at prediction time",
+    "column_order": "pass a DataFrame with the columns in `features`"
+  },
+  "not_used": {
+    "accessibility": "no signal on its own; adding it raised spatial MAE (ExtraTrees 7.989 -> 8.148)",
+    "network_127": "same features against the 127 labelled branches only; robustness check, not combined",
+    "poi_500m": {
+      "features": [
+        "bakeries_500m",
+        "cafes_500m",
+        "restaurants_500m",
+        "supermarkets_500m",
+        "convenience_stores_500m",
+        "public_transport_stops_500m",
+        "total_pois_500m"
+      ],
+      "reason": "final check: removing them changed spatial MAE 7.989 -> 7.594 and 5-seed random CV 8.696 -> 8.699 (selected on 2026-10-12 at 7.93 -> 7.64 and 8.73 -> 8.71, before universities_2km was removed)"
+    },
+    "universities_2km": "removed 2026-10-13: counts amenity=university|college OSM objects, which are mostly vocational colleges, lyceums, unnamed objects and campus parts, not universities; not replaced",
+    "branch_format": "see limitations",
+    "leakage": [
+      "avg_orders_index",
+      "avg_check_index",
+      "daily sales/orders",
+      "ranks"
+    ]
+  },
+  "limitations": [
+    "The supplied data contain only two Safia Mini branches, both with relatively low sales indices. This was insufficient to estimate a robust format effect, so branch format was excluded from the final model."
+  ],
+  "validation": {
+    "unit": "one branch (the 1,270 branch-day rows are never split)",
+    "spatial": {
+      "design": "leave-one-group-out over 5 groups: 4 k-means sectors of the 104 branches within 25 km of central Tashkent + all 23 branches farther out",
+      "MAE_mean": 7.594,
+      "MAE_std": 1.662,
+      "RMSE_mean": 10.201,
+      "RMSE_std": 2.828,
+      "Spearman_mean": 0.339,
+      "Spearman_std": 0.2
+    },
+    "standard": {
+      "design": "KFold(5, shuffle=True, random_state=42)",
+      "MAE_mean": 8.313,
+      "MAE_std": 1.589,
+      "RMSE_mean": 11.515,
+      "RMSE_std": 3.31,
+      "Spearman_mean": 0.433,
+      "Spearman_std": 0.117
+    },
+    "standard_5seeds": {
+      "design": "KFold(5) repeated with shuffle seeds 0-4 (25 folds)",
+      "MAE_mean": 8.699,
+      "MAE_std": 1.572,
+      "RMSE_mean": 12.028,
+      "RMSE_std": 2.981,
+      "Spearman_mean": 0.32,
+      "Spearman_std": 0.186
+    },
+    "baseline_median_spatial": {
+      "MAE_mean": 9.068,
+      "MAE_std": 2.544,
+      "RMSE_mean": 12.008,
+      "RMSE_std": 3.892,
+      "Spearman_mean": null,
+      "Spearman_std": null
+    },
+    "baseline_median_standard": {
+      "MAE_mean": 8.836,
+      "MAE_std": 2.347,
+      "RMSE_mean": 12.344,
+      "RMSE_std": 3.887,
+      "Spearman_mean": null,
+      "Spearman_std": null
+    },
+    "baseline_median_standard_5seeds": {
+      "MAE_mean": 8.944,
+      "MAE_std": 2.346,
+      "RMSE_mean": 12.323,
+      "RMSE_std": 4.085,
+      "Spearman_mean": null,
+      "Spearman_std": null
+    },
+    "metrics_note": "MAE primary; mean and std (ddof=1) over folds. The final model was chosen on these same folds from about 40 candidates, so the estimates are slightly optimistic."
+  },
+  "data_snapshots": {
+    "sales": "iiko export generated 2026-09-29, period 2026-09-01..2026-09-10 (data/processed/dataset_metadata.csv)",
+    "branch_coordinates": "data/processed/branch_coordinates.csv, frozen 2026-10-11 (11 corrections via branch_coordinate_overrides.csv)",
+    "safia_official_store_list": "safiabakery.uz/ru/locations retrieved 2026-10-11; 160 stores in Uzbekistan (safia_official_stores_uz.csv)",
+    "osm": "Geofabrik uzbekistan-latest.osm.pbf, replication timestamp 2026-10-09T20:21:04Z",
+    "stat_uz": "stat.uz district tables, 2026 values (growth vs 2025), downloaded 2026-10-11"
+  },
+  "scoring_a_new_site": "compute the same 22 features at the site's lat/lon: sofia_task.osm_poi_features.osm_poi_features, sofia_task.network_features.public_network_features against all 160 official stores (nothing excluded), and the stat.uz district of the site (as in scripts/build_branch_demographics.py)",
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  }
+}
