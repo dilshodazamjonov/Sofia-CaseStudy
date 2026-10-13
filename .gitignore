@@ -3,11 +3,22 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.streamlit/cache/
 .ipynb_checkpoints/
 catboost_info/
+
+# editors and operating systems
+.vscode/
+.idea/
+*.swp
+*~
 .DS_Store
+Thumbs.db
 
 # large raw OpenStreetMap files, only needed to rebuild the feature tables from raw data (see README).
 # Keep the local copies: a fresh download is a different snapshot and will not reproduce the tables.
-data/external/osm/uzbekistan-latest.osm.pbf
-data/external/osm/processed/osm_roads.gpkg
+*.osm.pbf
+osm_roads.gpkg
+
+# the submission archive is built from the repository, not stored in it
+*.zip

@@ -2,6 +2,14 @@
 
 Source notebook: `notebooks/01_eda.ipynb`. Data: `data/processed/branches.csv`, `daily_performance.csv`, `dataset_metadata.csv`.
 
+> **Early-stage document (1 October 2026).** This report was written before the coordinate QA and the
+> modelling, and uses the supplied coordinates and city labels. Two points were settled later, in
+> [final_report.md](final_report.md):
+> - **Tashkent count.** The coordinate QA moved branch W074 to Fergana, so 101 branches (not 102) are in
+>   Tashkent.
+> - **Store format.** Format was not modelled, because two Safia Mini branches are too few to estimate a
+>   format effect.
+
 **Purpose.** Decide whether `avg_sales_index` (the 10-day mean of daily `sales_index`) is a sound target for a location-quality model, and document what it represents.
 
 **Decision.** Use `avg_sales_index` as provided. Daily performance is stable, mean and median agree, and branch rankings persist from day to day. Caveats: only 10 days, a skewed 1.6–86.5 scale, and a handful of noisy branches (details below).

@@ -50,7 +50,7 @@ FEATURES = {  # feature -> (category, radius in km)
     "convenience_stores_500m": ("convenience", 0.5),
     "shopping_pois_1km": ("shopping", 1.0),
     "schools_1km": ("school", 1.0),
-    "universities_2km": ("university", 2.0),
+    "universities_2km": ("university", 2.0),  # still extracted, but not a model input since 2026-10-13 (sofia_task.modeling)
     "healthcare_1km": ("healthcare", 1.0),
     "public_transport_stops_500m": ("transport", 0.5),
     "public_transport_stops_1km": ("transport", 1.0),

@@ -2,3 +2,7 @@
 [browser]
 gatherUsageStats = false
 serverAddress = "localhost"
+
+# viewer toolbar: no developer-only "Deploy" button for people running the app locally
+[client]
+toolbarMode = "viewer"

@@ -2,7 +2,7 @@
 
     from sofia_task.predict import predict_location
     predict_location(41.3111, 69.2797)
-    # {'sales_index': 17.104..., 'location_potential': 24.409..., 'latitude': 41.3111, 'longitude': 69.2797,
+    # {'sales_index': 16.927..., 'location_potential': 22.834..., 'latitude': 41.3111, 'longitude': 69.2797,
     #  'admin_code': '1726266', 'admin_name': 'Yunusabad district'}
 
 lat/lon -> stat.uz district by point-in-polygon (sofia_task.demographics) -> 6 demographic features
